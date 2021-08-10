@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album</title>
+    <link href="css/flickr.css" rel="stylesheet">
+    <link href="images/img1.jpg" rel="icon">
+</head>
+
+<body>
+    <nav>
+        <div class="dropdown">
+            <span class="dropbtn">View Options</span>
+            <div class="dropdown-content">
+                <ul>
+                    <span>View Search Results</span>
+                    <hr>
+                    <li><a href="flickr.html">All Results</a> </li>
+                    <li><a href="flickrNext.html">One At A Time</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <img id="a"src="images/img1.jpg">
+        <img id="b"src="images/img2.jpg">
+        <img id="c"src="images/img3.jpg">
+        <img id="d"src="images/img4.jpg">
+        <h1>Welcome To Our Picture Album</h1>
+        Enjoy browsing through our catalog of pictures. <br> Please enter a key word below to search.
+    
+    </header>
+    <form id="form">
+        <input id="search" required />
+        <button>search</button>
+    </form>
+    <div id="page">
+        <p id="results">Search Results:</p>
+        <div id = "picture">
+            <img id="img" >
+            <div id="title"></div>
+            <br>
+            <button class="toggleButton" id="begButton">
+                << </button>
+                    <button class="toggleButton" id="backButton">
+                        < </button>
+                            <button class="toggleButton" id="nextButton">></button>
+                            <button class="toggleButton" id="endButton">>></button>
+        </div>
+    </div>
+    <footer>
+        <img id="e"src="images/img5.jpg">
+        <img id="f"src="images/img6.jpg">
+        <img id="g"src="images/img7.jpg">
+        <img id="h"src="images/img8.jpg">
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="flickrNext.js"></script>
+</body>
